@@ -43,14 +43,13 @@ Caller → Twilio Voice API → Express.js Server → AI Service → Twilio Resp
 
 ## 🔧 Setup & Configuration
 
-### 1️⃣ Clone the Repository
+ 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/DimpulBachu/AI-IVR-Modernization-Framework.git
 cd AI-IVR-Modernization-Framework
 2️⃣ Install Dependencies
 npm start
 3️⃣ Configure Environment Variables
-
 Create a .env file and fill in your credentials:
 PORT=3000
 TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
