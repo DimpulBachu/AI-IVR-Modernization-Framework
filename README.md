@@ -49,3 +49,15 @@ git clone https://github.com/DimpulBachu/AI-IVR-Modernization-Framework.git
 cd AI-IVR-Modernization-Framework
 2️⃣ Install Dependencies
 npm start
+3️⃣ Configure Environment Variables
+
+Create a .env file and fill in your credentials:
+PORT=3000
+TWILIO_ACCOUNT_SID=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+TWILIO_AUTH_TOKEN=your_auth_token_here
+TWILIO_PHONE_NUMBER=+12192495739
+AI_PROVIDER_API_KEY=your_openai_key_here
+ACS_BAP_ENDPOINT=https://placeholder.local/acs-bap
+4️⃣ Run Locally
+npm start
+
