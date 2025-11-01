@@ -1,16 +1,51 @@
-# React + Vite
+# 🤖 AI-Enabled IVR Conversational Modernization Framework
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧩 Overview
+This project demonstrates a next-generation **AI-driven Interactive Voice Response (IVR)** framework that modernizes traditional telephony systems using artificial intelligence, speech recognition, and natural language response generation.  
+The solution integrates **Twilio**, **Node.js**, and **Render** for real-time conversational automation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Key Features
+- ☎️ **Inbound Call Handling:** Automatically receives and processes calls via Twilio.
+- 🗣️ **Speech-to-Text (STT):** Converts the caller’s voice input into text for analysis.
+- 🧠 **AI-Based Understanding:** Interprets user intent and generates contextual responses.
+- 🔊 **Text-to-Speech (TTS):** Responds to the caller using natural synthesized voice.
+- 🔗 **ACS/BAP Adapter Integration:** Bridges legacy IVR logic with modern AI workflows.
+- ☁️ **Cloud-Deployed Backend:** Fully deployed on Render for global access.
+- 🪵 **Logging System:** Tracks speech, AI responses, and call sessions.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🏗️ System Architecture
+Caller → Twilio Voice API → Express.js Server → AI Service → Twilio Response → Caller
 
-## Expanding the ESLint configuration
+**Core Modules:**
+- `src/index.js` – Entry point, Express server setup  
+- `routes/voice.js` – Handles Twilio voice webhooks (`/voice`, `/process-speech`)  
+- `ai_service.js` – AI response generator (uses OpenAI or rule-based logic)  
+- `acs_bap_adapter.js` – Integration layer for legacy system handoff  
+- `utils/logger.js` – Call and response logging utility  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Tech Stack
+| Layer | Technology |
+|-------|-------------|
+| **Backend Framework** | Node.js (Express.js) |
+| **Telephony** | Twilio Programmable Voice |
+| **AI/NLP** | OpenAI API (configurable via `.env`) |
+| **Deployment** | Render Cloud Platform |
+| **Version Control** | GitHub |
+| **Environment Variables** | dotenv |
+
+---
+
+## 🔧 Setup & Configuration
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/DimpulBachu/AI-IVR-Modernization-Framework.git
+cd AI-IVR-Modernization-Framework
+2️⃣ Install Dependencies
+npm start
